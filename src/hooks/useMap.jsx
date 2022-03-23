@@ -1,4 +1,4 @@
-import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
+import { Marker, Popup } from "react-leaflet";
 
 export const useMap = (bicicletas) => {
   const MapaBicis = () => (

@@ -5,7 +5,10 @@ export const Layout = () => {
   return (
     <div className="container-layout">
       <div className="sidebar-layout ">
-        <img src="https://i.imgur.com/9kLFKum.png" alt="bicing" />
+        <img
+          src="https://www.bicing.barcelona/themes/bicing/img/logo-bicingv2.svg"
+          alt="bicing"
+        />
         <nav className="nav-layout">
           <Link
             className={`${
