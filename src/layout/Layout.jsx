@@ -29,7 +29,7 @@ export const Layout = () => {
         </nav>
       </div>
       <div className="header-layout">
-        <p>Esto es un header</p>
+        <p>Esto es un header pero tengo sueño y no se que poner aqui.</p>
       </div>
       <div className="content-layout">
         <Outlet />
