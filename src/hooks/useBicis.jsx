@@ -12,7 +12,17 @@ export const useBicis = (bicicletas) => {
               <td>{libres}</td>
               <td>{latitud}</td>
               <td>{longitud}</td>
-              <td>{<Maps longitud={longitud} latitud={latitud} />}</td>
+              <td>
+                {
+                  <Maps
+                    longitud={longitud}
+                    latitud={latitud}
+                    estacion={estacion}
+                    disponibles={disponibles}
+                    libres={libres}
+                  />
+                }
+              </td>
             </tr>
           </tbody>
         )

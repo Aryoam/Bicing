@@ -20,7 +20,11 @@ export const ModalMap = (props) => {
           />
           <Marker position={position}>
             <Popup>
-              A pretty CSS3 popup. <br /> Easily customizable.
+              <b>Estación: </b> {props.estacion}
+              <br />
+              <b>Bicicletas Disponibles:</b> {props.disponibles}
+              <br />
+              <b>Espacios de Estacionamiento:</b> {props.libres}
             </Popup>
           </Marker>
         </MapContainer>
