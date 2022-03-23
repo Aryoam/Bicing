@@ -8,7 +8,7 @@ export const Maps = ({ longitud, latitud }) => {
   return (
     <>
       <Button variant="primary" onClick={() => setModalShow(true)}>
-        Ver Mapa
+        Mapa
       </Button>
 
       <ModalMap

@@ -15,30 +15,35 @@ export const Bicing = () => {
 
   return (
     <>
-      <div className="text-center">
+      <div className="form-buscar">
         <Form.Control
           type="text"
           placeholder="¿Cuantas bicicletas buscas disponibles?"
           onChange={handleNumber}
         />
-        <Button variant="primary" onClick={handleClick}>
-          Iniciar
+        <Button
+          className="boton-buscar"
+          variant="primary"
+          onClick={handleClick}
+        >
+          Buscar
         </Button>
       </div>
-      <Table striped bordered hover>
-        <thead>
-          <tr>
-            <th>Estación</th>
-            <th>Disponibles</th>
-            <th>Libres</th>
-            <th>Latitud</th>
-            <th>Longitud</th>
-            <th>Mapa</th>
-          </tr>
-        </thead>
-        {click ? <TableBicing click={click} number={number} /> : null}
-      </Table>
-      {/*<Map />*/}
+      {click ? (
+        <Table striped bordered hover>
+          <thead>
+            <tr>
+              <th>Estación</th>
+              <th>Disponibles</th>
+              <th>Libres</th>
+              <th>Latitud</th>
+              <th>Longitud</th>
+              <th>Mapa</th>
+            </tr>
+          </thead>
+          <TableBicing click={click} number={number} />
+        </Table>
+      ) : null}
     </>
   );
 };

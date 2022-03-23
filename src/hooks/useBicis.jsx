@@ -4,8 +4,8 @@ export const useBicis = (bicicletas) => {
   const TableBicis = () => (
     <>
       {bicicletas.map(
-        ({ estacion, disponibles, libres, latitud, longitud }) => (
-          <tbody>
+        ({ estacion, disponibles, libres, latitud, longitud }, key) => (
+          <tbody key={key}>
             <tr>
               <td>{estacion}</td>
               <td>{disponibles}</td>

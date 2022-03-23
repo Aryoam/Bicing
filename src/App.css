@@ -1,4 +1,83 @@
+body {
+  background-color: #f3f4f6 !important;
+}
+
 .leaflet-container {
   width: 100%;
   height: 60vh;
+}
+
+.container-layout {
+  display: grid;
+  grid-template-columns: 370px 1fr;
+  grid-template-rows: 110px auto;
+}
+
+.content-layout {
+  margin-right: 20px;
+  height: calc(100vh - 130px);
+  overflow: scroll;
+}
+
+.sidebar-layout {
+  grid-row: 1/3;
+  height: calc(100vh - 40px);
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+.sidebar-layout img {
+  width: 200px;
+  margin: auto;
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.header-layout {
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  margin: 20px 20px 20px 0;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+.nav-layout a {
+  display: block;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 10px 20px;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.resaltar {
+  background-color: #e60e28;
+  box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 7px;
+  color: #ffffff;
+}
+
+.resaltar:hover {
+  color: #ffffff !important;
+}
+
+.noResaltar {
+  color: #000000 !important;
+}
+
+.btn-primary {
+  background-color: #e60e28 !important;
+  border-color: #e60e28 !important;
+}
+
+.form-buscar {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.form-buscar button {
+  margin-left: 20px;
 }
